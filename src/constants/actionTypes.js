@@ -1,9 +1,9 @@
 import { makeActionsStatus } from '../utils'
 import C from './basic'
 
-const { GET_HEROES } = C
+const { GET_HEROES, GET_HERO_PROFILE, UPDATE_HERO_PROFILE } = C
 
-const arr = [GET_HEROES]
+const arr = [GET_HEROES, GET_HERO_PROFILE, UPDATE_HERO_PROFILE]
 
 let result = {}
 
