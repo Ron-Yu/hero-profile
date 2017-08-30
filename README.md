@@ -4,6 +4,9 @@
 
 ### The app is based on [create-react-app](https://github.com/facebookincubator/create-react-app)
 
+### check list
+* * [] fsdfsdf
+
 ### How to run app in local development environment
 * **clone** this repository
 * entry to **hero-profile** directory
@@ -19,3 +22,4 @@
 ### react components structure
 ![alt text](https://user-images.githubusercontent.com/5327305/29866132-05c76020-8daa-11e7-9664-287f53dfb022.png)
 
+### react 
