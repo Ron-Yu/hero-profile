@@ -24,16 +24,16 @@ export function getHeroes() {
     try {
       dispatch({ type: GET_HEROES_REQUEST })
 
-      const response = await axios({
+      const { status, data } = await axios({
         method: 'get',
         url: GET_HEROES
       })
 
-      response.status === 200
-        ? dispatch({ type: GET_HEROES_SUCCESS, payload: response })
-        : dispatch({ type: GET_HEROES_FAILURE, payload: response })
+      status === 200
+        ? dispatch({ type: GET_HEROES_SUCCESS, payload: data })
+        : dispatch({ type: GET_HEROES_FAILURE, payload: data })
     } catch (err) {
-      dispatch({ type: GET_HEROES_FAILURE, payload: err })
+      dispatch({ type: GET_HEROES_FAILURE, payload: err.response.data })
     }
   }
 }
@@ -45,16 +45,16 @@ export function getHeroProfile(heroId) {
 
       dispatch({ type: GET_HERO_PROFILE_REQUEST })
 
-      const response = await axios({
+      const { status, data } = await axios({
         method: 'get',
         url
       })
 
-      response.status === 200
-        ? dispatch({ type: GET_HERO_PROFILE_SUCCESS, payload: response })
-        : dispatch({ type: GET_HERO_PROFILE_FAILURE, payload: response })
+      status === 200
+        ? dispatch({ type: GET_HERO_PROFILE_SUCCESS, payload: data })
+        : dispatch({ type: GET_HERO_PROFILE_FAILURE, payload: data })
     } catch (err) {
-      dispatch({ type: GET_HERO_PROFILE_FAILURE, payload: err })
+      dispatch({ type: GET_HERO_PROFILE_FAILURE, payload: err.response.data })
     }
   }
 }
@@ -66,17 +66,20 @@ export function updateHeroProfile({ heroId, ability }) {
 
       dispatch({ type: UPDATE_HERO_PROFILE_REQUEST })
 
-      const response = await axios({
+      const { status } = await axios({
         method: 'patch',
         url,
         data: ability
       })
 
-      response.status === 200
-        ? dispatch({ type: UPDATE_HERO_PROFILE_SUCCESS, payload: response })
-        : dispatch({ type: UPDATE_HERO_PROFILE_FAILURE, payload: response })
+      status === 200
+        ? dispatch({ type: UPDATE_HERO_PROFILE_SUCCESS })
+        : dispatch({ type: UPDATE_HERO_PROFILE_FAILURE })
     } catch (err) {
-      dispatch({ type: UPDATE_HERO_PROFILE_FAILURE, payload: err })
+      dispatch({
+        type: UPDATE_HERO_PROFILE_FAILURE,
+        payload: err.response.data
+      })
     }
   }
 }

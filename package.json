@@ -12,6 +12,8 @@
     "history": "^4.7.2",
     "keymirror": "^0.1.1",
     "material-ui": "^0.19.0",
+    "moxios": "^0.4.0",
+    "nock": "^9.0.14",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -20,6 +22,7 @@
     "react-router-dom": "^4.2.2",
     "react-router-redux": "next",
     "redux": "^3.7.2",
+    "redux-mock-store": "^1.2.3",
     "redux-thunk": "^2.2.0",
     "styled-components": "^2.1.2"
   },

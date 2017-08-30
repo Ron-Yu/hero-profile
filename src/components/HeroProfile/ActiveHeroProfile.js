@@ -27,11 +27,11 @@ class ActiveHeroProfile extends Component {
 
     return (
       <FadeIn delay="0.5s">
-        <Flex justify="center">
-          <Box width={1 / 3} px={2}>
+        <Flex justify="center" wrap>
+          <Box width={[1, 1 / 3]} px={2}>
             <CalculatorList {...heroProfile} />
           </Box>
-          <Box width={1 / 3} px={2}>
+          <Box width={[1, 1 / 3]} px={2}>
             <InfoSection {...heroProfile} heroId={heroId} />
           </Box>
         </Flex>

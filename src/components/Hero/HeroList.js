@@ -19,17 +19,17 @@ class HeroList extends Component {
     if (heroes.length === 0) return null
 
     return (
-      <Container>
+      <FlexContainer wrap>
         {heroes.map((hero, index) => {
           const isActive = Number(heroId) === Number(hero.id)
 
           return (
-            <Box key={hero.id} width={1 / 4} px={2}>
+            <Box key={hero.id} w={[1, 1 / 2, 1 / 4]} px={2}>
               <HeroCard {...hero} index={index} isActive={isActive} />
             </Box>
           )
         })}
-      </Container>
+      </FlexContainer>
     )
   }
 }
@@ -44,7 +44,7 @@ HeroList.defaultProps = {
   heroId: ''
 }
 
-const Container = styled(Flex)`
+const FlexContainer = styled(Flex)`
   margin-bottom: 20px;
 `
 
