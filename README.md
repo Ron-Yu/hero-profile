@@ -15,3 +15,7 @@
 
 ### How to build app for production
 * `npm run build` or `yarn run build`
+
+### react components structure
+![alt text](https://user-images.githubusercontent.com/5327305/29866132-05c76020-8daa-11e7-9664-287f53dfb022.png)
+
