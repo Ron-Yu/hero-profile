@@ -1,9 +1,9 @@
-import reducer from './heroes'
+import reducer, { INITIAL_STATE } from './heroes'
 import ACTION_TYPES from '../constants/actionTypes'
 
 describe('heroes reducer', () => {
   it('should return the initial state', () => {
-    expect(reducer(undefined, {})).toEqual([])
+    expect(reducer(undefined, {})).toEqual(INITIAL_STATE)
   })
 
   it('should handle GET_HEROES_SUCCESS', () => {

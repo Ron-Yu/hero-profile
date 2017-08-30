@@ -4,7 +4,7 @@ import C from '../constants/basic'
 const { GET_HERO_PROFILE_SUCCESS } = ACTION_TYPES
 const { INC_ABILITY, DEC_ABILITY } = C
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   ability: {
     str: 0,
     int: 0,
