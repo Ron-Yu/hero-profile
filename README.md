@@ -32,4 +32,24 @@
 ### react components structure
 ![alt text](https://user-images.githubusercontent.com/5327305/29866132-05c76020-8daa-11e7-9664-287f53dfb022.png)
 
-### react 
+### react state logic
+* use **redux** to control central state
+* redux state
+  * states
+    * heroList
+    * heroProfile
+      * ability
+      * remainingPoints
+
+### third party library
+* [redux](https://github.com/reactjs/redux): it's a great tool control central state in whole app
+* [react-redux](https://github.com/reactjs/react-redux): make redux state available to react components by **connect** HOC
+* [axios](https://github.com/mzabriskie/axios): greeat tool dealing with http request
+* [react-router](https://github.com/ReactTraining/react-router): tool for routing (sometimes it's hard to figure out)
+* [styled-components](https://github.com/styled-components/styled-components): style your component without external style file
+
+
+### 你在程式碼中寫註解的原則，遇到什麼狀況會寫註解
+
+### 在這份專案中你遇到的困難、問題，以及解決的方法
+
