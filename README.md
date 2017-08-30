@@ -1,6 +1,6 @@
 ## React app demo for responsive web design and test
 
-### [demo](wakeful-bun.surge.sh)
+### [demo](http://wakeful-bun.surge.sh/)
 
 ### The app is based on [create-react-app](https://github.com/facebookincubator/create-react-app)
 
@@ -47,9 +47,19 @@
 * [axios](https://github.com/mzabriskie/axios): greeat tool dealing with http request
 * [react-router](https://github.com/ReactTraining/react-router): tool for routing (sometimes it's hard to figure out)
 * [styled-components](https://github.com/styled-components/styled-components): style your component without external style file
+* [animate-css-styled-components](https://github.com/dielduarte/animate-css-styled-components): animate css for styled-components
+* [grid-styled](https://github.com/jxnblk/grid-styled):Responsive React grid system built with styled-components
+* [material-ui](http://www.material-ui.com/): material design component based on react
+* [redux-thunk](https://github.com/gaearon/redux-thunk): redux middleware for dealing with async actions
+* [nock](https://github.com/node-nock/nock): mock http response for testing
+* [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store): mock redux store and provide some usuful api
 
 
-### 你在程式碼中寫註解的原則，遇到什麼狀況會寫註解
+### comments rules
+* source code is the best comment
+* I will write why I wrote this block of code and what will be finished if comments is necessary.
 
-### 在這份專案中你遇到的困難、問題，以及解決的方法
-
+### problem in this project and how to figure it out
+* react-router(v4): it's a breaking change from v3 to v4. I have to figure out the concept and api from scratch.
+* try a new way to write style for react. I spent some time researching style-component library and it's ecosystem. it's a fantastic concept to implement style for react component.
+* it took lots of time for me to add testing for redux action and reducer. originally, I was struggling with async action and thinking how to handle or mock http response. I searched some reference online and made experiments in this project. finally, I know how to mock http response and finished my test. it will make my app stronger in the long term.
