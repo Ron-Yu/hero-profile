@@ -19,7 +19,7 @@ export function abilityReducer(state = INITIAL_STATE.ability, action) {
 
   switch (action.type) {
     case GET_HERO_PROFILE_SUCCESS:
-      return action.payload.data
+      return action.payload
     case INC_ABILITY:
       return {
         ...state,

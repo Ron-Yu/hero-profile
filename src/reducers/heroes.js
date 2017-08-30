@@ -7,7 +7,7 @@ const INITIAL_STATE = []
 export default function heroesReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case GET_HEROES_SUCCESS:
-      return action.payload.data
+      return action.payload
     default:
       return state
   }
